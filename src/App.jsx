@@ -1,10 +1,18 @@
 import './App.css'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Nav from './Components/Nav'
+import Index from './Components/Pages/Index'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-3xl text-red-800'>Hellow</h1>
+      <Router>
+        <Nav/>
+        <Routes>
+          <Route path='/' element={<Index/>}/>
+        </Routes>
+      </Router>
     </>
   )
 }
