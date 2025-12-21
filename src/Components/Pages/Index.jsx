@@ -116,7 +116,7 @@ const Index = () => {
         </div>
 
         <div className="service-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 ">
-            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-30px pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38, 42, 76, 0.1)] hover:border-transparent transition-all duration-150 ">
+            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-[10px] pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38,42,76,0.1)] hover:border-transparent transition-all duration-150 ">
               <div className="service-icon w-[80px] rounded-md p-2 bg-[#e0f0fd] text-[#7778f1] mx-auto mb-8 ">
                 <img src={service1} alt="" className='w-full h-full' />
               </div>
@@ -128,7 +128,7 @@ const Index = () => {
                 <a href="#" className='text-[#acacac] hover:text-[#005414] transition text-lg cursor-pointer'>Learn More <i className='bi bi-arrow-right '></i></a>
               </div>
             </div>
-            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-30px pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38, 42, 76, 0.1)] hover:border-transparent transition-all duration-150 ">
+            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-[10px] pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38,42,76,0.1)] hover:border-transparent transition-all duration-150 ">
               <div className="service-icon w-[80px] rounded-md p-2 bg-[#e0f0fd] text-[#7778f1] mx-auto mb-8 ">
                 <img src={service2} alt="" className='w-full h-full' />
               </div>
@@ -140,7 +140,7 @@ const Index = () => {
                 <a href="#" className='text-[#acacac] hover:text-[#005414] transition text-lg cursor-pointer'>Learn More <i className='bi bi-arrow-right '></i></a>
               </div>
             </div>
-            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-30px pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38, 42, 76, 0.1)] hover:border-transparent transition-all duration-150 ">
+            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-[10px] pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38,42,76,0.1)] hover:border-transparent transition-all duration-150 ">
               <div className="service-icon w-[80px] rounded-md p-2 bg-[#e0f0fd] text-[#7778f1] mx-auto mb-8 ">
                 <img src={service3} alt="" className='w-full h-full' />
               </div>
@@ -152,7 +152,7 @@ const Index = () => {
                 <a href="#" className='text-[#acacac] hover:text-[#005414] transition text-lg cursor-pointer'>Learn More <i className='bi bi-arrow-right '></i></a>
               </div>
             </div>
-            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-30px pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38, 42, 76, 0.1)] hover:border-transparent transition-all duration-150 ">
+            <div className="service-item flex flex-col items-center justify-center h-[350px] w-full text-center border border-[#e7e7e7] rounded-md pt-[40px] pe-[10px] pb-[30px] hover:shadow-[0px_5px_70px_0px_rgba(38,42,76,0.1)] hover:border-transparent transition-all duration-150 ">
               <div className="service-icon w-[80px] rounded-md p-2 bg-[#e0f0fd] text-[#7778f1] mx-auto mb-8 ">
                 <img src={service4} alt="" className='w-full h-full' />
               </div>

@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename='/Niraloy'>
         <Nav/>
         <Routes>
           <Route path='/' element={<Index/>}/>
