@@ -8,7 +8,7 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className='absolute top-0 left-0 z-[999] w-full bg-black'>
-      <div className="flex justify-between items-center px-8 lg:px-20 py-5 relative">
+      <div className="flex justify-between items-center px-10 lg: py-2 relative">
         <button className='lg:hidden text-white text-2xl' onClick={() => setMenuOpen(!menuOpen)}>
           <i className={`fa-solid ${ menuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
         </button>
@@ -39,13 +39,13 @@ const Nav = () => {
           </li>
         </ul>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center">
           <div className="hidden lg:flex items-center space-x-1 text-white text-lg">
             <i className='fas fa-phone-alt'></i>
             <span className='font-[500]'> xxxxx xxxxx</span>
 
             <button onClick={() => setShowModal(true)} className='text-white text-xl'>
-              <i className='fa-regular fa-user hover:text-[#005414] transition ml-5'></i>
+              <i className='fa-regular fa-user hover:text-[#005414] transition m-5'></i>
             </button>
 
             <button className='nav-btn bg-[#005414] border border-[#005414] btn relative text-white rounded overflow-hidden py-2 px-4 font-[600]'>
@@ -106,7 +106,7 @@ const Nav = () => {
             </div>
           </div>
         )}
-
+        
         
 
       </div>
