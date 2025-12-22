@@ -5,12 +5,18 @@ import service1 from '../../assets/serviceIcon1.jpg';
 import service2 from '../../assets/serviceIcon2.webp';
 import service3 from '../../assets/serviceIcon3.jpg';
 import service4 from '../../assets/serviceIcon4.jpg';
+// import Swiper from 'swiper';
 
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Pagination } from 'swiper/modules';
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-// import 'swiper/css/navigation'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// Properties Data
+import propertiesData from '../../Properties.json';
+
+import { Link } from 'react-router-dom';
 
 // import collectionImg1 from '../../assets/collectionImg1.webp'
 // import collectionImg2 from '../../assets/collectionImg2.webp'
@@ -94,11 +100,11 @@ const Index = () => {
             ))}</div>
 
             <div className="flex flex-col md:flex-row bg-white rounded overflow-hidden ">
-              <select value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)} className='p-[10px] text-[#5c727d] border-r outline-none text-lg cursor-pointer appearance-none'>{dropDownOptions[activeTab].map((option, idx) => (<option key={idx} value={option}>{option}</option>))}</select>
+              <select value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)} className='p-[10px] text-[#5c727d] border-r outline-none text-lg cursor-pointer appearance-none '>{dropDownOptions[activeTab].map((option, idx) => (<option key={idx} value={option}>{option}</option>))}</select>
 
               <input type="text" placeholder='Enter an address, state, city, area or zip code' className='flex-1 px-5 py-3 text-base text-black outline-none ' />
 
-              <button className='bg-[#005414] border-[#005414] text-white relative btn px-6 py-5 flex items-center gap-2 text-lg font-semibold '>
+              <button className='bg-[#005414] border-[#005414] text-white relative btn px-6 py-5 flex items-center gap-2 text-lg font-semibold justify-center '>
                 <a href="#" className='z-[999]' >
                   <i className='fas fa-search'/> Search
                 </a>
@@ -166,6 +172,48 @@ const Index = () => {
             </div>
         </div>
         
+      </div>
+
+    {/* Spotlight Properties */}
+      <div className="spotlight-properties bg-[#] px-[12%] py-[80px] ">
+        <div className="service-title section-title mb-10 ">
+          <h4 className="text-5xl font-bold ">Spotlight Properties</h4>
+          <p className='text-[#2f2956] font-[400] text-xl py-[10px] '>Those are the best spotlight properties, Niraloy can offer.</p>
+        </div>
+
+        <div className="py-6">
+          <Swiper modules={[Pagination]} pagination={{clickable: true}} slidesPerView={3} spaceBetween={20} loop={true} breakpoints={{
+            1399: {slidesPerView: 3},
+            1199: {slidesPerView: 3},
+            991: {slidesPerView: 2},
+            575: {slidesPerView: 1},
+            0: {slidesPerView: 1}
+          }} className='property-card-slider py-5' >
+            {propertiesData.spotlight.map((property) => (
+              <SwiperSlide key={`spotlight-${property.id}`} >
+                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden mb-10 ">
+                  {/* Inner Image Swiper */}
+                  <Swiper
+                    modules={[Pagination]}
+                    pagination={{clickable: true}}
+                    loop={true}
+                    className='property-img-slider'
+                  >
+                    {property.images.map((img, index) => (
+                      <SwiperSlide key={index}>
+                        <img src={img} alt={`${property.title} ${index + 1}`} className='w-full h-[15rem] object-cover rounded' />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+
+                  {/* Property Info */}
+                  <div className="py-4 my-2 ">
+                    <Link to={`/PropertiesDetails/${property.id} `}></Link>
+                  </div>
+                </div>
+              </SwiperSlide>))}
+          </Swiper>
+        </div>
       </div>
     </>
   )
