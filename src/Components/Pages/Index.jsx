@@ -207,8 +207,79 @@ const Index = () => {
                   </Swiper>
 
                   {/* Property Info */}
-                  <div className="py-4 my-2 ">
-                    <Link to={`/PropertiesDetails/${property.id} `}></Link>
+                  <div className="py-2 my-1 ">
+                    <Link to={`/PropertiesDetails/${property.id} `}>
+                      <div className="px-3">
+                        <h3 className='text-xl font-bricolage font-bold mb-2 text-gray-900 '>
+                          {property.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm mt-1 ">
+                          <i className="bi bi-house-door-fill mr-1 "></i> {property.bedrooms} Beds &nbsp; -- &nbsp;
+                          <i className="bi bi-droplet-half mr-1 "></i> {property.bedrooms} Baths &nbsp; -- &nbsp;
+                          <i className="bi bi-fullscreen mr-1 "></i>
+                        </p>
+                      </div>
+                      <div className="flex items-center justify-between mt-4 border-t px-4 pt-2 ">
+                        <p className="font-bold text-xl font-bricolage mt-2">{property.price}</p>
+                        <img src={property.avatar} alt="Agent" className='w-[50px] h-[50px] object-cover rounded border-2 mr-3 ' />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>))}
+          </Swiper>
+        </div>
+      </div>
+    {/* Top Properties */}
+      <div className="top-properties bg-[#00b42a5f] px-[12%] py-[80px] ">
+        <div className="service-title section-title mb-10 ">
+          <h4 className="text-5xl font-bold ">Top Properties</h4>
+          <p className='text-[#2f2956] font-[400] text-xl py-[10px] '>Those are the top rated properties, Niraloy can offer.</p>
+        </div>
+
+        <div className="py-6">
+          <Swiper modules={[Pagination]} pagination={{clickable: true}} slidesPerView={3} spaceBetween={20} loop={true} breakpoints={{
+            1399: {slidesPerView: 3},
+            1199: {slidesPerView: 3},
+            991: {slidesPerView: 2},
+            575: {slidesPerView: 1},
+            0: {slidesPerView: 1}
+          }} className='property-card-slider py-5' >
+            {propertiesData.top.map((property) => (
+              <SwiperSlide key={`top-${property.id}`} >
+                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden mb-10 ">
+                  {/* Inner Image Swiper */}
+                  <Swiper
+                    modules={[Pagination]}
+                    pagination={{clickable: true}}
+                    loop={true}
+                    className='property-img-slider'
+                  >
+                    {property.images.map((img, index) => (
+                      <SwiperSlide key={index}>
+                        <img src={img} alt={`${property.title} ${index + 1}`} className='w-full h-[15rem] object-cover rounded' />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+
+                  {/* Property Info */}
+                  <div className="py-2 my-1 ">
+                    <Link to={`/PropertiesDetails/${property.id} `}>
+                      <div className="px-3">
+                        <h3 className='text-xl font-bricolage font-bold mb-2 text-gray-900 '>
+                          {property.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm mt-1 ">
+                          <i className="bi bi-house-door-fill mr-1 "></i> {property.bedrooms} Beds &nbsp; -- &nbsp;
+                          <i className="bi bi-droplet-half mr-1 "></i> {property.bedrooms} Baths &nbsp; -- &nbsp;
+                          <i className="bi bi-fullscreen mr-1 "></i>
+                        </p>
+                      </div>
+                      <div className="flex items-center justify-between mt-4 border-t px-4 pt-2 ">
+                        <p className="font-bold text-xl font-bricolage mt-2">{property.price}</p>
+                        <img src={property.avatar} alt="Agent" className='w-[50px] h-[50px] object-cover rounded border-2 mr-3 ' />
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>))}

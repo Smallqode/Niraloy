@@ -75,3 +75,17 @@
   opacity: 1;
   top: 0%;
 }
+.swiper-wrapper{
+  padding: 30px 0;
+}
+.share-icons{
+  position: absolute;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet{
+  padding: 5px;
+  background-color: #005414;
+  transition: 0.4s;
+}
+.property-img-slider .swiper-wrapper{
+  padding: 0 !important;
+}

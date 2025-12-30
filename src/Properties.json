@@ -40,7 +40,7 @@
 ],
 "avatar":"Images/propertyowner3.jpg"},
 {"id":4,
-"title":"Prestige Gardenia",
+"title":"Evergreen Complex",
 "bedrooms":3,
 "bathrooms":2,
 "size":"1200 ft²",
@@ -53,7 +53,7 @@
 ],
 "avatar":"Images/propertyowner1.jpg"},
 {"id":5,
-"title":"Sobha City",
+"title":"Arcadia Villa",
 "bedrooms":4,
 "bathrooms":3,
 "size":"1600 ft²",
@@ -66,7 +66,7 @@
 ],
 "avatar":"Images/propertyowner2.jpg"},
 {"id":6,
-"title":"DLF Garden City"
+"title":"Ideal Towers"
 ,"bedrooms":3,
 "bathrooms":3,
 "size":"1400 ft²",
