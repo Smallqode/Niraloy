@@ -286,6 +286,16 @@ const Index = () => {
           </Swiper>
         </div>
       </div>
+    {/* COLLECTION */}
+      <div className="colection px-[2%] lg:px-[12%] py-[80px] ">
+        <div className="featured-title section-title mb-10">
+          <h4 className="text-5xl font-bold pb-1">Featured Collection</h4>
+          <p className="text-[#2f2956] font-[400] text-xl">Display how many properties are there by category, city or area</p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          .group fles items-center gap-4 bg-white
+        </div>
+      </div>
     </>
   )
 }

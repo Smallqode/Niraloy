@@ -12,7 +12,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route path='/' element={<Index/>}/>
-          <Route path="/PropertiesDetails/:id " element={<PropertiesDetails/>}/>
+          <Route path="/PropertiesDetails/:id" element={<PropertiesDetails/>}/>
         </Routes>
       </Router>
     </>
