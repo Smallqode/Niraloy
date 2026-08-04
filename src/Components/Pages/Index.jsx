@@ -293,7 +293,9 @@ const Index = () => {
           <p className="text-[#2f2956] font-[400] text-xl">Display how many properties are there by category, city or area</p>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          .group fles items-center gap-4 bg-white
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md"></div>
+          </div>
         </div>
       </div>
     </>
