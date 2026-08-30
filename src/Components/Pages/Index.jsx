@@ -5,6 +5,20 @@ import service1 from '../../assets/serviceIcon1.jpg';
 import service2 from '../../assets/serviceIcon2.webp';
 import service3 from '../../assets/serviceIcon3.jpg';
 import service4 from '../../assets/serviceIcon4.jpg';
+import collectionImage1 from '../../assets/collectionImage1.jpg'
+import collectionImage2 from '../../assets/collectionImage2.jpg'
+import collectionImage3 from '../../assets/collectionImage3.jpg'
+import collectionImage4 from '../../assets/collectionImage4.jpg'
+import collectionImage5 from '../../assets/collectionImage5.jpg'
+import collectionImage6 from '../../assets/collectionImage6.jpg'
+import collectionImage7 from '../../assets/collectionImage7.jpg'
+import collectionImage8 from '../../assets/collectionImage8.jpg'
+
+import agentImg from '../../assets/agentImg.jpg'
+import agentImg2 from '../../assets/agentImg2.jpg'
+import agentImg3 from '../../assets/agentImg3.jpg'
+import banner from '../../assets/banner.jpg'
+
 // import Swiper from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -294,7 +308,210 @@ const Index = () => {
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
-            <div className="h-full w-[80px] overflow-hidden rounded-md"></div>
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage1} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Kolkata</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>8 Listings</p>
+            </div>
+          </div>
+
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage2} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Mumbai</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>5 Listings</p>
+            </div>
+          </div>
+
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage3} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Bengaluru</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>2 Listings</p>
+            </div>
+          </div>
+
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage4} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Noida</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>7 Listings</p>
+            </div>
+          </div>
+
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage5} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Gurgaon</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>2 Listings</p>
+            </div>
+          </div>
+
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage6} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Chennai</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>2 Listings</p>
+            </div>
+          </div>
+
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage7} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Pune</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>5 Listings</p>
+            </div>
+          </div>
+
+          <div className="group flex items-center gap-4 bg-white rounded-md shadow-[0_5px_30px_0_rgba(38,42,76,.15)] h-[100px] p-3 transition-all duration-300 hover:shadow-[0_8px_40px_0_rgba(38, 42, 76, .2)]">
+            <div className="h-full w-[80px] overflow-hidden rounded-md">
+              <img src={collectionImage8} alt="" className='h-full object-cover transition-transform duration-300 group-hover:scale-110' />
+            </div>
+            <div>
+              <h4 className="text-[#2b2b2b] text-lg font-semibold font-bricolage transition-colors duration-300 ">Darjeeling</h4>
+              <p className='text-[#696969] text-sm transition-colors duration-300'>2 Listings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {/* FEATURED AGENTS */}
+      <div className="agents bg-[#bebebe] px-[2%] lg:px-[12%] py-[80px] ">
+        <div className="featured-title section-title mb-10">
+          <h4 className="text-5xl font-bold pb-1">Featured Agents</h4>
+          <p className="text-[#2f2956] font-[400] text-xl">Check out the agents you want to showcase as featured</p>
+        </div>
+
+        <div className="agents-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5 ">
+          
+          <div className="agents-items w-full bg-white p-2 shadow-lg rounded-xl">
+            <div className="agent-image rounded-xl overflow-hidden w-full">
+              <img src={agentImg} alt="agent" className='w-full h-full' />
+            </div>
+            <div className="agent-content p-5 pb-0 w-full">
+              <h4 className='text-2xl font-bricolage font-bold cursor-pointer hover:text-[#6919dd] transition-colors duration-300'>Jeane Thompson</h4>
+              <span className="text-[#696969] text-lg">Middle Management</span>
+              <p className="text-[#696969] py-4 pb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <div className="flex justify-between items-center gap-2 pb-3">
+                <ul className="flex items-center text-[#696969] gap-2">
+                  <li>
+                    <i className="fa-brands fa-facebook-f text-xl hover:text-[#044c8a] cursor-pointer"></i>
+                    <i className="fa-brands fa-x-twitter text-xl hover:text-[#000000] cursor-pointer"></i>
+                    <i className="fa-brands fa-linkedin text-xl hover:text-[#098ee7] cursor-pointer"></i>
+                    <i className="fa-brands fa-pinterest text-xl hover:text-[#ca0d0d] cursor-pointer"></i>
+                    <i className="fa-brands fa-instagram text-xl hover:text-[#eb7f0c] cursor-pointer"></i>
+                  </li>
+                </ul>
+                <ul className="flex items-center text-[#696969] gap-2">
+                  <li>
+                    <i className="fa-solid fa-phone text-xl hover:text-[#1ae76f] cursor-pointer"></i>
+                  </li><li>
+                    <i className="fa-solid fa-envelope text-xl hover:text-[#ea312e] cursor-pointer"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div className="agents-items w-full bg-white p-2 shadow-lg rounded-xl">
+            <div className="agent-image rounded-xl overflow-hidden w-full">
+              <img src={agentImg2} alt="agent" className='w-full h-full' />
+            </div>
+            <div className="agent-content p-5 pb-0 w-full">
+              <h4 className='text-2xl font-bricolage font-bold cursor-pointer hover:text-[#6919dd] transition-colors duration-300'>Richard Wilson</h4>
+              <span className="text-[#696969] text-lg">Commercial Broker</span>
+              <p className="text-[#696969] py-4 pb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <div className="flex justify-between items-center gap-2 pb-3">
+                <ul className="flex items-center text-[#696969] gap-2">
+                  <li>
+                    <i className="fa-brands fa-facebook-f text-xl hover:text-[#044c8a] cursor-pointer"></i>
+                    <i className="fa-brands fa-x-twitter text-xl hover:text-[#000000] cursor-pointer"></i>
+                    <i className="fa-brands fa-linkedin text-xl hover:text-[#098ee7] cursor-pointer"></i>
+                    <i className="fa-brands fa-pinterest text-xl hover:text-[#ca0d0d] cursor-pointer"></i>
+                    <i className="fa-brands fa-instagram text-xl hover:text-[#eb7f0c] cursor-pointer"></i>
+                  </li>
+                </ul>
+                <ul className="flex items-center text-[#696969] gap-2">
+                  <li>
+                    <i className="fa-solid fa-phone text-xl hover:text-[#1ae76f] cursor-pointer"></i>
+                  </li><li>
+                    <i className="fa-solid fa-envelope text-xl hover:text-[#ea312e] cursor-pointer"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div className="agents-items w-full bg-white p-2 shadow-lg rounded-xl">
+            <div className="agent-image rounded-xl overflow-hidden w-full">
+              <img src={agentImg3} alt="agent" className='w-full h-full' />
+            </div>
+            <div className="agent-content p-5 pb-0 w-full">
+              <h4 className='text-2xl font-bricolage font-bold cursor-pointer hover:text-[#6919dd] transition-colors duration-300'>Erika Brown</h4>
+              <span className="text-[#696969] text-lg">Real-estate Broker</span>
+              <p className="text-[#696969] py-4 pb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <div className="flex justify-between items-center gap-2 pb-3">
+                <ul className="flex items-center text-[#696969] gap-2">
+                  <li>
+                    <i className="fa-brands fa-facebook-f text-xl hover:text-[#044c8a] cursor-pointer"></i>
+                    <i className="fa-brands fa-x-twitter text-xl hover:text-[#000000] cursor-pointer"></i>
+                    <i className="fa-brands fa-linkedin text-xl hover:text-[#098ee7] cursor-pointer"></i>
+                    <i className="fa-brands fa-pinterest text-xl hover:text-[#ca0d0d] cursor-pointer"></i>
+                    <i className="fa-brands fa-instagram text-xl hover:text-[#eb7f0c] cursor-pointer"></i>
+                  </li>
+                </ul>
+                <ul className="flex items-center text-[#696969] gap-2">
+                  <li>
+                    <i className="fa-solid fa-phone text-xl hover:text-[#1ae76f] cursor-pointer"></i>
+                  </li><li>
+                    <i className="fa-solid fa-envelope text-xl hover:text-[#ea312e] cursor-pointer"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {/* GET-IN-TOUCH */}
+      <div className="relative flex items-center justify-center px-[2%] lg:px-[12% py-[80px] lg:py-[120px] bg-cover bg-center" style={{backgroundImage:`url(${banner})`}}>
+        <div className="absolute insert-0 bg-black opacity-60 "></div>
+        <div className="bg-white w-full max-w-7xl z-50 rounded-lg shadow-lg flex flex-col md:flex-row overflow-hidden">
+          <div className="lg:w=1/2 bg-gray-900 text-white p-10 flex-col jsuti8fy-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Work with the real estate platform in <span className="text-[#6919dd]">Kokata </span>to buy or sell properties</h2>
+            <p className="mb-6 text-gray-300">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quod minima, iusto nobis suscipit ipsam molestias ullam officiis expedita vero recusandae, culpa modi quis facilis! Non magni natus quo provident.
+            </p>
+            <button className="bg-[#6919dd] text-white font-semibold relative btn py-2 px-6 rounded w-fit">
+              <a href="#" className='z-[1] relative'>
+                Contact us today
+              </a>
+            </button>
+          </div>
+          <div className="lg:w-1/2 bg-white p-10">
+            <h3 className="text-xl font-semibold text-gray-800 mb-6">Get in Touch</h3>
+            <form className="space-y-4">
+              <input type="text" placeholder='Your Name' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-0" />
+              <input type="text" placeholder='Email ID' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-0" />
+              <input type="text" placeholder='Phone No.' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-0" />
+              <textarea rows={4} placeholder='Type your message...' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-0"></textarea>
+              <button type='submit' className="w-full bg-[#6919dd] text-white font-[600] py-3 rounded btn relative">
+                <a href="#" className="z-[1] relative">Send Message</a>
+              </button>
+            </form>
           </div>
         </div>
       </div>
